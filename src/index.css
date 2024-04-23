@@ -1,0 +1,76 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #f1eaf5;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* Colores ajustados para mejorar el contraste */
+:root {
+  --purple: #eee1fb;
+  --purple-hover: #4c206e;
+  --purple-light: #582580;
+  --red: #fbe1e1;
+  --red-hover: #a2060e;
+  --red-light: #b20d15;
+}
+
+.Link-react-router-dom-go-out {
+  color: var(--red);
+  text-decoration: none;
+  padding: 7px 20px;
+  border-radius: 5px;
+  background-color: var(--red-light);
+}
+
+.Link-react-router-dom-go-out:hover {
+  background-color: var(--red-hover);
+}
+
+.Link-react-router-dom-start {
+  color: var(--purple);
+  text-decoration: none;
+  padding: 20px 45px;
+  border-radius: 5px;
+  font-size: large;
+  background-color: var(--purple-light);
+  animation: pulse 2s infinite;
+}
+
+.Link-react-router-dom-start:hover {
+  background-color: var(--purple-hover);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(165, 94, 234, 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(165, 94, 234, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(165, 94, 234, 0);
+  }
+}
+
+.Link-react-router-dom-start:active {
+  background-color: rgba(165, 94, 234, 0.66);
+}
+
+.Link-react-router-dom-start:focus {
+  outline: 2px solid var(--purple);
+}
